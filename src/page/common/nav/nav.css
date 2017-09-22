@@ -1,0 +1,33 @@
+/*
+* @Author: Administrator
+* @Date:   2017-09-21 00:07:17
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-09-21 22:28:39
+*/
+
+.nav {
+	height: 40px;
+	line-height: 40px;
+	background: #eee;
+}
+
+.nav .user {
+	float: left;
+}
+
+.nav .link {
+	margin-right: 5px;
+}
+
+.nav .user.login{
+	display: none;
+}
+
+.nav-list{
+	float: right;
+}
+
+.nav-list .nav-item {
+	display: inline-block;
+	margin-left: 10px;
+}
