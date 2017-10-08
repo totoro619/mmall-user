@@ -2,7 +2,7 @@
  * @Author: Administrator
  * @Date:   2017-09-21 00:07:01
  * @Last Modified by:   Administrator
- * @Last Modified time: 2017-09-21 23:52:49
+ * @Last Modified time: 2017-10-04 19:16:05
  */
 
 
@@ -25,14 +25,14 @@ var nav = {
 		});
 		//注册点击事件
 		$('.js-register').click(function() {
-			window.location.href = './register.html';
+			window.location.href = './user-register.html';
 		});
 		// 退出点击事件
 		$('.js-logout').click(function() {
 			_user.logout(function(res) {
 				window.location.reload();
 			}, function(errMsg) {
-				_mm.errTip(errMsg)
+				_mm.errorTip(errMsg)
 			})
 		});
 	},

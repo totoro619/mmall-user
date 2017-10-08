@@ -2,7 +2,7 @@
  * @Author: Administrator
  * @Date:   2017-09-22 22:26:14
  * @Last Modified by:   Administrator
- * @Last Modified time: 2017-09-22 23:50:08
+ * @Last Modified time: 2017-09-26 16:04:47
  */
 
 require('./nav-side.css');
@@ -23,7 +23,7 @@ var navSide = {
 		}, {
 			name: 'pass-update',
 			desc: '修改密码',
-			href: './pass-update.html'
+			href: './user-pass-update.html'
 		}, {
 			name: 'about',
 			desc: '关于MMALL',
@@ -49,5 +49,7 @@ var navSide = {
 		$('.nav-side').html(navhtml);
 	},
 };
+
+
 
 module.exports = navSide;

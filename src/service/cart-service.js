@@ -2,7 +2,7 @@
  * @Author: Administrator
  * @Date:   2017-09-21 23:50:17
  * @Last Modified by:   Administrator
- * @Last Modified time: 2017-09-21 23:55:30
+ * @Last Modified time: 2017-10-04 19:06:40
  */
 
 var _mm = require('util/_mm.js');
@@ -15,6 +15,82 @@ var _cart = {
 			error: reject
 		});
 	},
+
+	addToCart: function(productInfo, resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/cart/add.do'),
+			data: productInfo,
+			success: resolve,
+			error: reject
+		});
+	},
+
+	getCartList: function(resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/cart/list.do'),
+			success: resolve,
+			error: reject
+		});
+	},
+
+	selectProduct: function(productId, resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/cart/select.do'),
+			data: {
+				productId: productId,
+			},
+			success: resolve,
+			error: reject
+		});
+	},
+
+	unselectProduct: function(productId, resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/cart/un_select.do'),
+			data: {
+				productId: productId
+			},
+			success: resolve,
+			error: reject
+		});
+	},
+
+	selectAllProduct: function(resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/cart/select_all.do'),
+			success: resolve,
+			error: reject
+		});
+	},
+
+	unselectAllProduct: function(resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/cart/un_select_all.do'),
+			success: resolve,
+			error: reject
+		});
+	},
+
+	updateCount: function(info, resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/cart/update.do'),
+			data: info,
+			success: resolve,
+			error: reject
+		});
+	},
+
+	deleteProduct: function(productIds, resolve, reject) {
+		_mm.request({
+			url: _mm.getServerUrl('/cart/delete_product.do'),
+			data: {
+				productIds: productIds
+			},
+			success: resolve,
+			error: reject
+		});
+	},
+
 };
 
 module.exports = _cart;

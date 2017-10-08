@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-09-22 00:23:00
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-22 18:14:51
+* @Last Modified time: 2017-09-25 22:09:37
 */
 .header .logo {
 	position: absolute;
@@ -31,4 +31,14 @@
 	position: absolute;
 	height: 39px;
 	width: 80px;
+}
+
+/* 面包屑导航 */
+.crumb{
+	background: #eee;
+	height: 50px;
+	line-height: 50px;
+	color: #888;
+	font-size: 14px;
+	border-top: 2px solid #c60023;
 }

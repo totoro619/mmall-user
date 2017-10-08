@@ -2,18 +2,21 @@
 * @Author: Administrator
 * @Date:   2017-09-22 22:26:30
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-22 22:54:18
+* @Last Modified time: 2017-09-25 22:27:34
 */
 
 /* 导航主体 */
 .nav-side {
 	width: 130px;
+	min-height: 130px;
 	float: left;
+	padding-top: 5px;
 }
 
 .nav-side .nav-item{
 	line-height: 30px;
 	font-size: 14px;
+	font-weight: bold;
 }
 
 .nav-side .nav-item.active .link{
@@ -29,4 +32,5 @@
 .content.with-nav {
 	width: 950px;
 	float: left;
+	padding-top: 10px;
 }
