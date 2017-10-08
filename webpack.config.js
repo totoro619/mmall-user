@@ -2,7 +2,7 @@
  * @Author: Administrator
  * @Date:   2017-09-18 23:52:08
  * @Last Modified by:   Administrator
- * @Last Modified time: 2017-10-07 22:22:34
+ * @Last Modified time: 2017-10-08 23:23:04
  */
 
 var webpack = require('webpack');
@@ -38,7 +38,8 @@ var config = {
 		'order-confirm': ['./src/page/order-confirm/index.js'],
 		'order-list': ['./src/page/order-list/index.js'],
 		'order-detail': ['./src/page/order-detail/index.js'],
-		'result': ['./src/page/result/result.js']
+		'result': ['./src/page/result/result.js'],
+		'payment': ['./src/page/payment/index.js']
 	},
 	output: {
 		path: './dist',
@@ -88,7 +89,8 @@ var config = {
 		new HtmlWebpackPlugin(getHtmlConfig('order-confirm', '订单确认')),
 		new HtmlWebpackPlugin(getHtmlConfig('order-list', '订单列表')),
 		new HtmlWebpackPlugin(getHtmlConfig('order-detail', '订单详情')),
-		new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果'))
+		new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
+		new HtmlWebpackPlugin(getHtmlConfig('payment', '支付页面'))
 	]
 };
 
